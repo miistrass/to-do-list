@@ -1,0 +1,78 @@
+:root {
+  --fonte-principal: 'Montserrat', sans-serif;
+  --branco: #ffffff;
+  --preto: #000000;
+  --cinza: #E2E2E2;
+  --botao-formulario: #713ABE;
+  --verde: #14C38E;
+  --vermelho: #FF6363;
+}
+
+body {
+  font-family: var(--fonte-principal);
+  background-color: var(--branco);
+  padding: 30px;
+  color: var(--preto);
+  background-image: url('./img/background-pink.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.app {
+  max-width: 600px;
+  margin: 0 auto 300px;
+  background-color: #efefef;
+  padding: 20px 30px;
+  border-radius: 10px;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+p {
+  margin: 10px 0;
+}
+
+input {
+  box-sizing: border-box;
+}
+
+button {
+  background-color: var(--botao-formulario);
+  color: var(--branco);
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  opacity: .8;
+  transition: 0.3s;
+}
+
+button:hover {
+  opacity: 1;
+}
+
+.complete {
+  background-color: var(--verde);
+}
+
+.remove {
+  background-color: var(--vermelho);
+}
+
+.todo-form {
+  padding-bottom: 1.5rem;
+}
+
+input, select {
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #DDD;
+  border-radius: 3px;
+  width: 100%;
+}
