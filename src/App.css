@@ -21,7 +21,7 @@ body {
 .app {
   max-width: 600px;
   margin: 0 auto 300px;
-  background-color: #efefef;
+  background-color: var(--cinza);
   padding: 20px 30px;
   border-radius: 10px;
 }
@@ -87,10 +87,30 @@ button:hover {
   padding-bottom: 1.5rem;
 }
 
+select {
+  background-color: var(--branco);
+}
+
 input, select {
   padding: 5px;
   margin-bottom: 10px;
   border: 1px solid #DDD;
   border-radius: 3px;
   width: 100%;
+}
+
+.filter, .search {
+  border-bottom: 1px solid var(--preto);
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+.filter-options {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.filter-options div {
+  flex: 1 1 0;
 }
