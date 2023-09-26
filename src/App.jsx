@@ -61,8 +61,6 @@ function App() {
     setTodos(newTodos)
   }
 
-  localStorage.setItem()
-
   return (
     <div className='app'>
       <h1>Lista de tarefas</h1>
@@ -76,7 +74,7 @@ function App() {
               : filter === "Completed" 
               ? todo.isCompleted 
               : !todo.isCompleted
-          )
+              )
           .filter((todo) => 
             todo.text.toLowerCase().includes(search.toLocaleLowerCase())
           )
